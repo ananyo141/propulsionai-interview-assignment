@@ -1,6 +1,7 @@
 import type { Request, Response, NextFunction } from "express";
 
 import Item from "../models/item";
+import Log from "../models/logging";
 
 export const getItems = async (_req: Request, _res: Response, _next: NextFunction) => {
     try {
