@@ -1,7 +1,9 @@
 {
   "scripts": {
     "start": "ts-node --transpileOnly server.ts",
-    "dev": "nodemon"
+    "dev": "nodemon",
+	"build": "tsc",
+	"start:prod": "node build/server.js"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
